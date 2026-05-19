@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
 
+import Login from "./pages/Login";
+
+export default function App() {
+  return <Login />;
+}
+
 export default function App() {
   const [students, setStudents] = useState([]);
   const [output, setOutput] = useState([]);

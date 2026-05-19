@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Girl Animation */
+@keyframes slide {
+  0% { transform: translateX(100vw); }
+  50% { transform: translateX(-100vw) scaleX(-1); }
+  100% { transform: translateX(100vw) scaleX(-1); }
+}
+
+.animate-slide {
+  animation: slide 10s linear infinite;
+}
+
+/* Leaves */
+@keyframes fall {
+  0% { top: -10%; opacity: 0; }
+  10% { opacity: 1; }
+  100% { top: 110%; transform: rotate(360deg); }
+}
+
+.animate-fall {
+  animation: fall linear infinite;
+  animation-duration: 10s;
+}
